@@ -3,6 +3,11 @@
 It all started with an image of my YT2007 Late project that I shared on Reddit. 
 Thanks to your incredible support and upvotes, I restarted working on this project,
 which I had cast aside three months ago. Thank you all for encouraging me. Please enjoy the project!
+[!WARNING]
+> This style will only work on Stylem for Pale Moon.
+FOR INSTALL PALE MOON HERE:https://www.palemoon.org/
+FOR INSTALL ADOBE FLASH PLAYER HERE:https://archive.org/download/flashplayer32_0r0_371_win
+FOR INSTALL STYLEM HERE:https://addons.palemoon.org/addon/stylem/
 
 
 <img width="1366" height="768" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/5e775d34-b6e5-45b5-aa70-c7d702df9fa8" />
