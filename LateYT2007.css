@@ -1,0 +1,2485 @@
+/* Rimuoviamo il vecchio stile e mettiamo quello bianco pulito */
+.video-time,
+.runtime {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+    border: 1px solid #999999 !important;
+    padding: 0px 2px !important;
+    font-size: 10px !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold !important;
+    position: absolute !important;
+    bottom: 4px !important;
+    /* Posizionato sopra l'immagine */
+    right: 4px !important;
+    z-index: 10;
+    border-radius: 0px !important;
+    width: auto !important;
+    height: auto !important;
+}
+#REC-titlebar:after {
+    content: "Director Videos";
+    color: #999;
+    font-size: 12px;
+    font-weight: bold;
+    visibility: visible;
+}
+
+.feedmodule-anchor {
+    width: 555px !important;
+}
+
+#feed_recommended-content {
+    border: none;
+    margin-top: -6px;
+    text-align: left;
+}
+
+
+
+#feedmodule-REC .video-entry.yt-uix-hovercard {
+    margin: 0;
+    width: 82px;
+    height: unset;
+    border: none;
+}
+#feedmodule-REC .video-cell {
+    margin-left: 26px;
+    margin-right: -29px;
+    margin-top: 7px;
+}
+#feedmodule-REC .video-cell:nth-of-type(1n+5) {
+    display: none;
+}
+
+#feedmodule-REC .vimg120 {
+    visibility: visible;
+    display: block;
+    border: 1px solid #ccc;
+    width: 80px;
+    height: 80px;
+}
+#feedmodule-REC .v120WrapperInner {
+    visibility: hidden;
+    border: none;
+    height: unset;
+    width: unset;
+    height: unset;
+    margin: 0;
+}
+#feedmodule-REC .v120WrapperOuter {
+    border: 1px solid #ccc;
+    width: unset;
+}
+
+#feedmodule-REC .video-main-content {
+    margin-left: -12px;
+    width: 100px;
+    height: 24px;
+}
+
+#feedmodule-REC .video-title {
+    font-size: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* ==UserStyle==
+@name         DX2006 - A 2006 theme for YT2009
+@version      1.1
+@namespace    http://www.w3.org/1999/xhtml
+@description  Masthead made by DX, who runs YT2009. Everything else made by Rtas
+              Homepage is based on a Dec. 30th, 2006 wayback capture, which can be seen here: http://web.archive.org      /web/20061230002712/http://www.youtube.com
+              Watch page based this capture: http://web.archive.org/web/20070106225324/http://youtube.com/watch?v=SC7QBo2a4hQ
+@author       DX, Rtas
+@license      No License
+==/UserStyle== */
+/*Masthead made by DX, who runs YT2009. Everything else made by Rtas*/
+/*Homepage is based on a Dec. 30th, 2006 wayback capture, which can be seen here: http://web.archive.org/web/20061230002712/http://www.youtube.com/*/
+/*Watch page based this capture: http://web.archive.org/web/20070106225324/http://youtube.com/watch?v=SC7QBo2a4hQ*/
+@namespace url(http://www.w3.org/1999/xhtml);
+
+
+
+/*header/masthead*/
+body {
+
+    width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#baseDiv {
+
+    position: relative;
+    width: 874px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mymedia #view-pane {
+    width: 674px;
+}
+
+#homepage-side-content {
+    margin-top: 80px;
+    margin-left: 575px;
+    position: absolute;
+}
+
+.feedmodule-border-blue {
+    border: 1px solid #ccc;
+}
+
+.fm2-title-border-box-blue {
+    border-color: #ccc;
+}
+
+.utility-item {
+    line-height: unset;
+    height: 12px;
+    padding-bottom: 27px;
+    position: relative;
+    left: 325px;
+    bottom: 20px;
+    font-size: 12px;
+    /*text-decoration: underline;*/
+}
+/*    
+    button {
+  visibility: hidden;
+}
+button:after {
+  content:'goodbye'; 
+  visibility: visible;
+  display: block;
+  position: absolute;
+  background-color: red;
+  padding: 5px;
+  top: 2px;
+}*/
+#masthead-utility span.utility-item a {
+    text-decoration: underline;
+}
+
+#masthead-utility span.utility-item a strong {
+    visibility: hidden;
+}
+
+
+#masthead-utility span.utility-item a strong:after {
+    white-space: nowrap;
+    overflow: hidden;
+    content: "Sign Up";
+    visibility: visible;
+}
+
+#masthead-utility span.utility-item span.utility-joiner {
+    /*color: #03c;*/
+    visibility: hidden;
+}
+
+#masthead-utility span.utility-item span.utility-joiner:after {
+    /*
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden; 
+  content: "\00a0 | \00a0 My Account \00a0 | \00a0 History \00a0 | \00a0 QuickList (0) \00a0 | \00a0 Help \00a0 | \00a0";
+  */
+    content: "|";
+    margin-left: -12px;
+    visibility: visible;
+}
+
+
+#masthead-container,
+#masthead {
+    width: 879px;
+    height: 157px;
+    margin-top: 7px;
+    margin-bottom: -4px;
+    border-bottom: 0;
+}
+#masthead-nav-main a[href="/videos"],
+#masthead-nav-main a[href="/channels"] {
+    display: inline-block;
+    width: 1009px;
+    height: 632px;
+    background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png"), url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top -50px;
+    color: transparent;
+    margin-right: -45px;
+
+}
+#masthead-nav-main a[href="/videos"] {
+    margin-left: -67px;
+}
+
+#masthead-nav-main a[href="/channels"] {
+    background-image: url("http://web.archive.org/web/20070331132914im_/http://youtube.com/img/tab_channels_118x28.gif"), url("http://web.archive.org/web/20070331132914im_/http://youtube.com/img/tab_community_118x28.gif");
+}
+#masthead #logo {
+    width: 260px !important;
+    height: 77px !important;
+    background: url("https://web.archive.org/web/20070601050047im_/http://www.youtube.com/img/pic_youtubelogo_123x63.gif");
+    background-repeat: no-repeat;
+    background-position: center top 31px;
+    margin-left: -65px;
+}
+
+
+#masthead-search {
+    height: 20px;
+    float: right;
+    background: none;
+    border: none;
+    margin-top: 43px;
+visibility: hidden
+}
+
+#masthead .search-form {
+    height: 20px;
+}
+
+#masthead-search-term {
+    max-height: 18px;
+    height: 18px !important;
+    padding: 0px 0px !important;
+    width: 250px !important;
+}
+
+#masthead .search-term {
+    border-color: #7F9DB9;
+}
+
+
+#masthead .search-form .yt-button {
+    font-family: "MS Shell Dlg \32 ";
+    font-size: unset;
+
+    margin: unset;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+#masthead-search a {
+    background: #F5F5F1;
+    padding: 0px 6px;
+    border: 1px solid #647D9E;
+    border-radius: 3px;
+    height: 20px !important;
+}
+
+#masthead-search a span {
+    font-weight: normal !important;
+    color: black;
+    padding: 1px 3px;
+    position: relative;
+    top: -2px;
+}
+
+#masthead-nav-main {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#masthead-nav-main a[href="/"] {
+    display: none;
+}
+
+
+
+#masthead-end {
+    height: 24px;
+    background: url("");
+    background-repeat: no-repeat;
+}
+
+#masthead-nav-user {
+    width: 135px;
+    font-weight: unset;
+}
+
+#masthead-nav-user #quicklist-nav,
+#masthead-nav-user a[href*="history"] {
+    display: none;
+}
+
+
+
+#masthead-nav-user a[href*="subscriptions"] {
+    visibility: hidden;
+}
+
+
+
+
+#masthead-nav-user a[href*="upload"] {
+
+    display: none;
+}
+
+#masthead-nav-user a[href*="upload"] span {
+    visibility: hidden;
+}
+
+
+
+
+
+#footer {
+    clear: both;
+    width: 875px;
+    margin-top: 12px;
+    padding-bottom: 12px;
+
+    background: #EEE;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 0px;
+}
+
+#footer .links {}
+
+#footer .links th {
+    font-weight: bold;
+    font-size: 11px;
+    color: #333;
+}
+
+
+
+
+#footer .links td {
+    text-decoration: underline;
+}
+
+#footer .search-term {
+    padding: unset;
+
+
+    width: 250px;
+    color: #000000;
+    font-size: 12px;
+}
+
+.search {
+    margin-top: -2px;
+}
+
+.search > form:nth-child(1) > a:nth-child(3) {
+    font-family: "MS Shell Dlg \32 ";
+    font-weight: normal !important;
+    color: black;
+    background: unset;
+    border: 1px solid #647D9E;
+    border-radius: 3px;
+    margin-top: 0px;
+    margin-left: 5px;
+
+    position: relative;
+    top: 2px;
+    width: 38px;
+    height: 19px;
+
+}
+
+#recommended-loading-sprite {
+    margin-left: -55px;
+}
+
+
+
+.region-and-language-pickers {
+    visibility: hidden;
+    margin-top: -58px;
+}
+
+#copyright {
+    visibility: hidden;
+    position: absolute;
+    left: 257px;
+}
+
+#copyright:after {
+    visibility: visible;
+    content: "Copyright © 2008 YouTube, Inc.";
+}
+
+
+
+
+
+
+
+
+
+
+a.notif-count.hid {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    z-index: 950;
+    top: 110.5px;
+    right: 27px;
+    font-size: 11px;
+}
+a.notif-count.hid:after {
+
+    visibility: visible;
+
+    content: "Inbox";
+}
+
+#masthead-nav-user a[href*="subscriptions"] {
+    display: block;
+    font-size: 11px;
+    text-decoration: underline;
+    position: relative;
+    width: 10;
+    height: 0;
+    top: 73px;
+    left: -11px;
+    z-index: 950;
+}
+
+#masthead-nav-user a[href*="subscriptions"]:before {
+    visibility: visible;
+    display: inline-block;
+
+    z-index: 950;
+    padding-right: 3px;
+    text-decoration: none;
+    color: black;
+    content: "-";
+}
+
+
+.homepage-sprite {
+    display: none;
+}
+.img_feed_subscriptions {
+    display: none;
+}
+
+.fm2-titleText {}
+
+#feedmodule-REC {
+    margin-top: 30px !important;
+}
+
+#REC-titlebar {
+    margin-top: -24px;
+}
+
+
+
+
+
+
+
+
+#iyt-add-remove-module-div {
+    position: absolute;
+    left: 565px;
+    top: 495px;
+    white-space: nowrap;
+}
+
+#dragdrop {
+    overflow: visible !important;
+}
+
+#feed_recommended {
+    display: none;
+}
+
+#REC-titlebar:after {
+    content: "Promoted Videos";
+    color: #515151;
+
+    font-size: 16px;
+    font-weight: bolder;
+    visibility: visible;
+}
+#feedmodule-REC .video-entry.yt-uix-hovercard {
+    margin: 0;
+    width: 127px;
+    height: unset;
+    border: none;
+}
+#feedmodule-REC .video-cell {
+    margin-left: -1px;
+    margin-right: -2px;
+    margin-top: 16px;
+
+}
+#feedmodule-REC .video-cell:nth-of-type(1n + 5) {
+    display: none;
+}
+.feedmodule-anchor {
+    width: 555px !important;
+}
+
+#feed_recommended-content {
+    border: none;
+    margin-top: -12px;
+    text-align: left;
+}
+
+
+
+
+
+#feedmodule-REC .vimg120 {
+    visibility: visible;
+    display: block;
+    border: 2px solid #fff;
+    width: 123px;
+    height: 89px;
+}
+#feedmodule-REC .v120WrapperInner {
+    visibility: hidden;
+    border: none;
+    height: unset;
+    width: unset;
+    height: unset;
+    margin: 0;
+}
+#feedmodule-REC .v120WrapperOuter {
+    border: 1px solid #bdbdbd;
+    width: unset;
+}
+
+#feedmodule-REC .video-main-content {
+    margin-left: -1px;
+    width: 100px;
+    height: 12px;
+}
+
+#feedmodule-REC .video-title {
+    font-size: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#feedmodule-REC .video-facets {
+    display: none;
+}
+
+.feedmodule-anchor {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+.feedmodule-data {
+    padding: 0;
+}
+.feeditem-compressed-category-title {
+    display: none;
+}
+.feeditem-compressed,
+.feeditem-bigthumb {
+    padding: 10px 0px;
+    border-bottom: 1px dashed #999;
+    width: 541px;
+    margin: 0;
+}
+
+#feed_popular-content {
+    background: #EEE;
+}
+
+.super-large-video .feedmodule-singleform-info {
+    margin-top: unset;
+    width: 50%;
+    font-size: 11px;
+}
+
+
+
+.feedmodule-singleform-info .video-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 400px;
+    /*optional*/
+    /*height: 96px;*/
+    height: 52px;
+}
+
+.feedmodule-updown {
+    display: none;
+}
+.fm2-icon {
+    display: none;
+}
+
+#feedmodule-POP {
+    margin-bottom: 35px;
+    padding: unset;
+}
+
+#feedmodule-POP .vimg220,
+.vimg120 {
+    visibility: visible;
+    border: 1px solid #ccc;
+    width: 122px;
+    height: 110px;
+}
+
+
+
+#feedmodule-POP .video-main-content {
+    margin-left: -12px;
+    width: 100px;
+    height: 24px;
+}
+
+#feedmodule-POP:after {
+    visibility: visible;
+    background-color: #CCC;
+    color: #03C;
+    text-decoration: underline;
+    border: 1px solid transparent;
+    position: absolute !important;
+    margin-top: -7px;
+    padding-left: 455px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+
+
+    text-align: right;
+    content: "see more videos";
+}
+
+.normal-size-video,
+.super-large-video {
+    width: unset;
+    float: left;
+    display: unset;
+}
+
+
+.fm2-title {
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+#feedmodule-TOP .fm2-title {
+    visibility: hidden;
+}
+
+#statmodules_inbox-titleText {
+    position: absolute;
+    padding-top: 4px;
+}
+
+#feedmodule-TOP .fm2-title:after {
+    visibility: visible;
+    content: "Featured Videos";
+    font-size: 23px;
+    margin-left: -97px;
+}
+
+#feedmodule-PRO .fm2-title:after {
+    visibility: visible;
+    content: "Most Popular";
+    margin-left: -95px;
+}
+#feedmodule-PRO .fm2-title {
+    visibility: hidden;
+    margin-left: -25px;
+}
+
+
+.statModule-titleText {
+    font-size: 14px;
+    padding-left: 5px;
+    position: relative;
+}
+
+
+.feedmodule-preamble {
+    float: right;
+    padding: 1px 10px 0px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+}
+.feedmodule-preamble a {
+    visibility: hidden;
+}
+.feedmodule-preamble a:after {
+    visibility: visible;
+    content: "See More Featured Videos";
+    color: #03c;
+}
+
+.video-time {
+    /*To-do*/
+}
+
+
+
+
+
+
+#feedmodule-TOP .video-main-content {
+    margin-left: -12px;
+    width: 100px;
+    height: 24px;
+}
+
+#feedmodule-TOP:after {
+    visibility: visible;
+    background-color: #CCC;
+    color: #03C;
+    text-decoration: underline;
+    border: 1px solid transparent;
+    position: absolute !important;
+    margin-top: -7px;
+    padding-left: 455px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+
+
+    text-align: right;
+    content: "See More Videos";
+}
+
+
+
+
+.utility-item .yt-menulink-menu {
+    position: absolute;
+    border: unset;
+    padding: unset;
+    margin: unset;
+
+    visibility: visible;
+    background: rgba(0, 0, 0, 0) url("http://web.archive.org/web/20061227222825im_/http://www.youtube.com/img/pic_mycontrolpanel_300x30.png") no-repeat scroll left top;
+
+
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 104px;
+    margin-left: -108px;
+    width: 300px;
+
+    padding-left: 27px;
+    z-index: 900;
+}
+
+.yt-menulink-menu {}
+
+.yt-menulink-menu a {
+    display: unset;
+    padding: 0;
+}
+
+.yt-menulink-menu span {
+    position: relative;
+    margin-left: 0px;
+}
+.yt-menulink-menu span:after {
+    visibility: visible;
+    content: "-";
+    margin-left: 3px;
+}
+.yt-menulink-menu span:nth-child(1):after {
+    visibility: hidden;
+}
+
+.yt-menulink-menu > span:nth-child(1) > a:nth-child(1) {
+    display: none;
+}
+
+.yt-menulink-menu > span:nth-child(2) > a:nth-child(1) {
+    visibility: hidden;
+}
+.yt-menulink-menu > span:nth-child(2) > a:nth-child(1):after {
+    visibility: visible;
+    content: "Videos";
+    margin-left: -50px;
+}
+
+
+
+
+
+
+
+
+
+#baseDiv {
+    width: 877px;
+
+}
+
+#watch-vid-title {
+    width: 450px;
+    white-space: nowrap;
+}
+
+#watch-longform-buttons {
+    display: none;
+}
+
+#watch-vid-title h1 {
+    font-size: 18px;
+}
+#watch-this-vid,
+.fl {
+
+    width: 450px;
+    height: 370px;
+}
+
+#watch-player-div {
+    width: 450px;
+    height: 370px;
+}
+
+#watch-this-vid-info {
+    width: 452px;
+}
+
+
+.watch-tabs {
+    width: 452px;
+    background: unset !important;
+}
+.watch-tabs:after {
+    visibility: visible;
+    content: "";
+    position: absolute;
+    width: 452px;
+    margin-left: -30px;
+    margin-top: 30px;
+    border-bottom: 1px #fff solid;
+}
+
+#watch-other-vids {
+    position: absolute;
+    left: 490px;
+}
+
+#watch-main-area {
+    width: 452px;
+    position: relative;
+    padding: 6px 0 0;
+    margin-top: 3px;
+    margin-bottom: 12px;
+    background: #fff;
+    border: 1px #fff solid;
+}
+.watch-tabs .watch-tab {
+    height: 0px;
+    line-height: unset;
+    padding: unset;
+    font-weight: unset;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+html > body #watch-main-area .watch-tabs {
+    margin-top: 28px;
+}
+
+
+.watch-tab {
+    height: 10px;
+    margin-left: 100px;
+}
+
+.watch-action-text {}
+
+.watch-tab span:after {
+    border-bottom: 1px dotted #03C;
+}
+
+.watch-tabs {
+    margin-left: 30px;
+
+    margin-top: -4px;
+}
+
+
+
+#watch-tab-favorite {
+
+    margin-top: -20px;
+}
+
+#watch-tab-share {
+    margin-left: 2px;
+    margin-top: -20px;
+}
+
+#watch-tab-flag {
+    width: 99px;
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+#watch-tab-playlists {
+    margin-left: 212px;
+    margin-top: -20px;
+
+}
+#watch-action-favorite-link > span:nth-child(2) {
+    visibility: hidden;
+    margin-left: -43px;
+}
+
+#watch-action-favorite-link > span:nth-child(2):after {
+    visibility: visible;
+    content: "Favorite";
+    margin-left: -26px;
+}
+
+#watch-action-favorite-link:before {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 19px !important;
+    height: 17px !important;
+    margin-left: -19px;
+    background: url("https://web.archive.org/web/20071104022953im_/http://www.youtube.com/img/icn_watch3_fav_22x18.png");
+}
+
+#watch-action-playlists-link:before {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 19px !important;
+    height: 17px !important;
+    margin-left: -28px;
+    background: url("https://web.archive.org/web/20071104022953im_/http://www.youtube.com/img/icn_watch3_playlist_22x18.png");
+}
+
+#watch-action-playlists {
+    background: unset;
+}
+
+#watch-action-favorite {
+    background: unset;
+}
+#watch-action-flag {
+    background: unset;
+}
+
+
+#watch-action-share-link:before {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 19px !important;
+    height: 17px !important;
+    margin-left: -10px;
+    background: url("https://web.archive.org/web/20071104022953im_/http://www.youtube.com/img/icn_watch3_share_22x18.png");
+
+}
+
+#watch-action-flag-link:before {
+    visibility: visibile;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 19px !important;
+    height: 17px !important;
+    margin-left: 41px;
+    background: url("https://web.archive.org/web/20071104022954im_/http://www.youtube.com/img/icn_watch3_report_22x18.png");
+}
+
+#watch-action-share-link > span:nth-child(2) {
+    visibility: visible;
+    margin-left: 1px;
+}
+
+#watch-action-share-link > span:nth-child(2):after {
+    visibility: hidden;
+    content: "Share";
+    margin-left: -12px;
+}
+
+#watch-action-flag-link > span:nth-child(2) {
+    visibility: hidden;
+    margin-left: -23px;
+    line-height: 1.4em;
+}
+
+#watch-action-flag-link > span:nth-child(2):after {
+    visibility: hidden;
+    content: "";
+    margin-right: -1px
+    margin-top: -29px;
+}
+
+#watch-action-playlists-link > span:nth-child(2) {
+    visibility: hidden;
+    margin-left: -85px;
+    margin-top: 126px;
+}
+
+#watch-action-playlists-link > span:nth-child(2):after {
+    visibility: visible;
+    content: "Add to Playlists";
+}
+
+#watch-action-share-link > span:nth-child(2):before {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 19px !important;
+    height: 17px !important;
+    margin-left: -588px;
+    margin-top: 56px;
+    background: url("http://web.archive.org/web/20070106214429im_/http://www.youtube.com/img/icn_web_reg_19x17.gif");
+}
+
+
+#watch-action-playlists-link:after {
+    visibility: visibile;
+    content: "Flag";
+    border-bottom: 1px dotted #03C;
+    margin-left: 37px;
+}
+
+
+
+
+
+
+#watch-views-div {
+
+    position: absolute;
+
+    text-align: left;
+    width: 450px;
+    height: 27px !important;
+    border-bottom: 1px #ccc solid;
+
+
+    z-index: 950;
+    left: 7px;
+    top: 486px;
+}
+
+.watch-tab-contents .watch-tab-body {
+    margin-top: 27px;
+}
+#watch-views {
+    visibility: hidden;
+}
+watch-views:after {
+    visibility: visible;
+}
+#watch-view-count {
+
+    visibility: visible;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+    position: absolute;
+    margin-top: 4px;
+}
+
+#watch-view-count:before {
+    visibility: visible;
+    content: "Views:";
+    font-weight: normal;
+    margin-right: 4px;
+}
+
+#watch-share-services-collapsed > div:nth-child(1):after {
+    visibility: visible;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    content: "Comments: ";
+    z-index: 950;
+    left: 113px;
+    top: 69px;
+}
+
+#watch-share-services-collapsed > div:nth-child(1) > div:nth-child(1):after {
+    visibility: visible;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    content: "1009";
+    font-weight: bold;
+    z-index: 950;
+    left: 181px;
+    top: 69px;
+}
+
+#watch-share-services-collapsed > div:nth-child(1):before {
+    visibility: visible;
+    position: absolute;
+    content: "|";
+    z-index: 950;
+    left: 87px;
+    top: 68px;
+    margin: 2px 10px;
+    vertical-align: middle;
+    color: #ccc;
+    display: inline;
+}
+
+#watch-share-services-collapsed > div:nth-child(2):after {
+    visibility: visible;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    content: "Favorited: \00a0 \00a0 \00a0 \00a0 \00a0  \00a0 \00a0 times";
+    z-index: 950;
+    left: 240px;
+    top: 69px;
+}
+
+#watch-share-services-collapsed > div:nth-child(2) > div:nth-child(1):after {
+    visibility: visible;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    content: "699";
+    z-index: 950;
+    left: 296px;
+    top: 69px;
+    font-weight: bold;
+}
+
+#watch-share-services-collapsed > div:nth-child(2):before {
+    visibility: visible;
+    position: absolute;
+    content: "|";
+    z-index: 950;
+    left: 214px;
+    top: 68px;
+    margin: 2px 10px;
+    vertical-align: middle;
+    color: #ccc;
+    display: inline;
+}
+
+#watch-share-services-collapsed > div:nth-child(3):after {
+    visibility: visible;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-decoration: underline;
+    color: #03c;
+    content: "more stats...";
+    z-index: 950;
+    left: 382px;
+
+    top: 69px;
+}
+
+#watch-share-services-collapsed > div:nth-child(3):before {
+    visibility: visible;
+    position: absolute;
+    content: "|";
+    z-index: 950;
+    left: 355px;
+    top: 68px;
+    margin: 2px 10px;
+    vertical-align: middle;
+    color: #ccc;
+    display: inline;
+}
+
+#watch-stats-data-wrapper {
+    display: none;
+}
+
+#watch-video-responses-children {
+    /*display: block;*/
+}
+
+
+
+.yt2009-video-response-expander {
+    background: #EEE;
+    margin: 10px 0 6px;
+    padding: 4px;
+}
+
+#watch-video-responses-children {
+    margin: unset;
+    padding: unset;
+
+    width: 450px;
+    height: 90px;
+}
+
+.video-bar-container-box {
+    width: 350px;
+}
+
+#watch-video-responses-children .video-bar-item {
+    width: 80px;
+    height: 91px;
+}
+
+#watch-video-responses-children .video-bar-item:nth-child(n + 1) {
+    width: 100px;
+    height: 91px;
+}
+
+.video-bar-item .hLink {
+    text-decoration: underline;
+    position: absolute;
+    width: 100px;
+    margin-left: -57px;
+}
+
+.video-bar-item .video-time {
+    display: none;
+}
+
+.video-bar-item .v90WrapperOuter {
+    margin: unset;
+    padding: unset;
+    border: 3px solid #DDD;
+    width: 80px;
+    height: 60px;
+}
+
+#watch-video-responses-children .video-bar-item .v90WideEntry {
+    padding: unset;
+}
+
+.video-bar-item .v90WrapperInner {
+    margin: unset;
+    padding: unset;
+    border: none;
+    width: 80px;
+    height: 60px;
+}
+
+.video-bar-item .v90WrapperInner .video-thumb-link .vimg90 {
+    margin: unset;
+    padding: unset;
+    width: 80px;
+    height: 60px;
+}
+
+.video-bar-item {
+
+    padding: unset;
+    margin: unset;
+}
+
+#watch-video-responses-none {
+    padding-top: 35px;
+}
+
+a .video-bar-left-arrow {
+    background: url("http://web.archive.org/web/20070110104150im_/http://www.youtube.com/img/LeftSingleArrowOff.gif") no-repeat scroll;
+    margin-top: 12px;
+}
+
+a .video-bar-right-arrow {
+    background: url("http://web.archive.org/web/20070110104150im_/http://www.youtube.com/img/RightSingleArrowOff.gif") no-repeat scroll;
+    margin-top: 12px;
+}
+
+
+#watch-comment-panel > h4:nth-child(2) {
+    font-size: 14px;
+}
+
+
+.yt-uix-expander-head.yt2009-video-response-expander:after {
+    visibility: visible;
+    content: "Post a Video Response";
+    position: absolute;
+
+    left: 323px;
+    color: #03c;
+    text-decoration: underline;
+}
+
+a.smallText:nth-child(2) {
+    visibility: hidden;
+    margin-left: -43px;
+}
+
+a.smallText:nth-child(2):after {
+    visibility: visible;
+    content: "Post a text comment";
+    position: absolute;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 222px;
+}
+
+#watch-comment-count:after {
+    visibility: visible;
+    content: inherit;
+}
+
+.watch-comment-head,
+.watch-comment-head-hidden {
+    background-color: #EEE;
+    padding: 4px;
+}
+
+#watch-comment-panel > div:nth-child(3):before {
+    visibility: visible;
+    display: block;
+    content: "Most Recent \00a0 ...\00a0 \00a0 1 \00a0 2 \00a0 3 \00a0 4 \00a0 5 \00a0 6 \00a0 7 \00a0 8 \00a0  \00a0 ... \00a0  \00a0 Oldest";
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    padding: 3px;
+
+    margin-top: -32px;
+    left: 4px;
+    width: 445px;
+    border: 1px solid #CCC;
+}
+
+#watch-comment-panel > div:nth-child(3):after {
+    visibility: visible;
+    display: block;
+    content: " 2 \00a0 3 \00a0 4 \00a0 5 \00a0 6 \00a0 7 \00a0 8 \00a0  \00a0 ... \00a0  \00a0 Oldest";
+    position: absolute;
+    margin-top: -28px;
+    margin-left: 203px;
+    color: #03c;
+    text-decoration: underline;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 965;
+}
+
+#watch-comment-panel > h4:nth-child(2) {
+    margin-bottom: 35px;
+}
+
+.watch-comment-entry {
+    font-size: unset;
+}
+.watch-comment-auth {
+    text-decoration: underline;
+}
+.watch-comment-time {
+    font-size: 11px;
+    color: black;
+}
+
+.watch-comment-entry {
+    margin: 6px 0 20px;
+    padding: unset;
+    border: unset;
+}
+
+.watch-comment-action {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    text-align: right;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.watch-comment-action:before {
+    visibility: visible;
+    position: absolute;
+    margin-left: 61px;
+    content: "(\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 )";
+}
+
+.watch-comment-action:after {
+    visibility: visible;
+    content: "Reply";
+    color: #03C;
+    border-bottom: 1px dotted #03C;
+}
+
+.watch-comment-voting {
+    display: none;
+}
+
+.watch-comments-footer-td {
+    color: #03C;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 53px;
+    margin-top: 30px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 20px;
+}
+
+#watch-comments-footer-table {
+    margin-bottom: 50px;
+    border: none;
+}
+
+#watch-comments-show-more-button {
+    visibility: hidden;
+    margin-left: -64px;
+    position: absolute;
+    left: 60px;
+    top: -30px;
+    z-index: 965;
+}
+
+#watch-comments-show-more-button:before {
+    visibility: visible;
+    display: block;
+    content: " 2 \00a0 3 \00a0 4 \00a0 5 \00a0 6 \00a0 7 \00a0 8 \00a0  \00a0 ... \00a0  \00a0 Oldest";
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 197px;
+    color: #03c;
+    text-decoration: underline;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 965;
+}
+
+#watch-comments-show-more-button:after {
+    visibility: visible;
+    display: block;
+    content: "Most Recent \00a0 ...\00a0 \00a0 1 \00a0 2 \00a0 3 \00a0 4 \00a0 5 \00a0 6 \00a0 7 \00a0 8 \00a0  \00a0 ... \00a0  \00a0 Oldest";
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    padding: 3px;
+
+    margin-top: 6px;
+    left: 3px;
+    width: 445px;
+    border: 1px solid #CCC;
+}
+
+td.watch-comments-footer-td:nth-child(1) > strong:nth-child(1) {
+    visibility: hidden;
+    margin-left: -52px;
+}
+
+td.watch-comments-footer-td:nth-child(1) > strong:nth-child(1):before {
+    visibility: visible;
+    margin-right: -58px;
+    content: "View all_";
+}
+
+#watch-comments-show-more-td {
+    width: 445px;
+    display: block;
+}
+
+#watch-comment-count {
+    visibility: visible;
+    margin-left: 1px;
+}
+
+td.watch-comments-footer-td:nth-child(1) {
+    padding-top: 32px;
+}
+
+
+#watch-comment-post {
+    padding-top: 30px;
+}
+
+
+.yt2009-signin-hide {
+    display: none;
+}
+#watch-channel-brand-cap {
+    display: none;
+}
+
+
+
+.fn {
+    font-size: 11px;
+}
+.fn:before {
+
+    visibility: visible;
+    content: "From ";
+    font-weight: bold;
+    font-size: 11px;
+    color: #333;
+}
+
+
+
+.watch-video-added {
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+}
+.watch-video-added:before {
+    visibility: visible;
+    content: "Added ";
+    font-weight: bold;
+    font-size: 11px;
+    color: #333;
+}
+
+#watch-channel-vids-div {
+    margin-bottom: 11px;
+}
+#user_banner img {
+    width: 875px !important;
+}
+
+.playnav-player-container {
+    width: 450px !important;
+    height: 370px !important;
+}
+
+#movie_player {
+    width: 450px !important;
+    height: 370px !important;
+}
+
+#movie_player {
+    width: 450px !important;
+}
+
+#yt2009_playhead {
+    width: 450px !important;
+    height: 370px !important;
+}
+
+.playnav-video-panel {
+    width: 450px !important;
+}
+
+#playnav-play-panel,
+#playnav-play-loading {
+    left: 460px !important;
+    width: 400px !important;
+    height: 581px !important;
+}
+
+#playnav-play-content {
+    height: 581px !important;
+    width: 400px !important;
+}
+
+.scrollbox-body {
+    height: 575px !important;
+    width: 390px !important;
+}
+
+#upload_search_query-play {
+    width: 280px !important;
+}
+
+.commentsTableFull {
+    width: 512px !important;
+}
+
+#user_comments {
+    width: 548px !important;
+    top: -527px;
+    left: 90px;
+}
+
+#user_friends {
+    display: inline-block;
+    width: 300px;
+    left: -221px;
+    height: 260px;
+}
+
+#user_friends-body > div:nth-child(1) {
+    display: inline-block;
+    width: 400px;
+    height: 190px;
+}
+
+.user-peep {
+    margin: 3px 40px 0px 5px;
+}
+
+embed.fl {
+    width: 450px;
+    height: 370px;
+}
+
+
+
+#body-column {
+    width: 660px;
+}
+
+.main-tab-layout-top-browse-tabs {
+    width: 660px;
+}
+/* Links in alto a destra (Sign Up, Help, etc) */
+#masthead-utility {
+    position: absolute;
+    top: 29px;
+    right: 756px;
+    font-size: 11px;
+}
+/* Inserimento JN sotto What's New */
+/* GOOFY BEAR */
+.side-announcement-box::after {
+
+
+    visibility: hidden;
+}
+
+/* Se la tua istanza usa un contenitore specifico per What's New */
+#hp-whats-new::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin-top: 102px;
+    background-image: url('https://web.archive.org/web/20061130141520im_/http://www.youtube.com/img/ad_underground_winners_300x35.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    visibility: hidden;
+}
+/* 1. Reset globale per eliminare lo spazio bianco in alto */
+html,
+body {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* 2. Alza il contenitore principale in tutte le pagine */
+#baseDiv,
+#page,
+#masthead-container {
+    margin-top: -34px !important;
+}
+
+/* 3. FIX SPECIFICO PER LA PAGINA WATCH (Il player e i dettagli) */
+/* Questo forza il blocco del video a salire */
+#watch-headline-container,
+#watch-video-container,
+#watch-main-col,
+#watch-sidebar {
+    position: relative !important;
+    top: -25px !important;
+    /* Regola questo se vuoi che il video salga ancora di più */
+}
+
+/* 4. FIX LOGIN (Sign In / Sign Up) */
+/* Lo tiene fermo in alto a destra senza farlo finire sopra le schede */
+#util-nav {
+    position: absolute !important;
+    top: 1px !important;
+    right: 10px !important;
+    z-index: 9999;
+}
+
+/* 5. Piccola pulizia per il logo e la barra di navigazione */
+#masthead {
+    margin-bottom: 0 !important;
+}
+
+.nav-item {
+    vertical-align: bottom !important;
+}/* Nasconde il box What's New e il relativo annuncio laterale */
+.side-announcement-box {
+    display: none !important;
+}
+
+#masthead-nav-main a[href="/videos"],
+#masthead-nav-main a[href="/channels"] {
+    display: inline-block;
+    width: 1009px;
+    height: 63px;
+    background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png"), url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top -50px;
+    color: transparent;
+    margin-right: -45px;
+
+}
+/* Abbassa i video per dare spazio al logo e alle tab */
+#homepage-main-content, .video-grid, #whats-featured {
+    margin-top: 25px !important;
+}
+
+/* Se vuoi distanziarli specificamente dal titolo della sezione */
+.hp-module-title {
+    margin-bottom: 15px !important;
+    margin-top: 20px !important;
+}/* --- HOMEPAGE: Abbassa i Director Videos --- */
+#homepage-main-content, 
+.video-grid, 
+#whats-featured,
+.hp-module-title {
+    margin-top: 35px !important;
+}
+
+/* --- WATCH PAGE: Sistema il titolo e il player --- */
+#watch-vid-title, 
+.watch-video-title,
+#watch-headline-title {
+    margin-top: 26px !important;
+    margin-bottom: -6px !important;
+    display: block !important;
+}
+
+#watch-video-container, 
+#watch-player-div {
+    margin-top: 1px !important;
+}
+
+/* --- RIMOZIONE DEFINITIVA "WANT TO CUSTOMIZE" --- */
+/* Visto che i selettori precedenti hanno fallito, proviamo con questi che mirano alla struttura della tabella */
+#baseDiv > table tr > td:last-child > table:first-child,
+div[style*="border: 1px solid #CCCCCC"],
+.homepage-side-block {
+    display: none !important;
+}
+/* homepage */
+.fm2-title-border-box-gray {
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  height: 23px;
+  padding: 6px 0px 0px;
+  background: none;
+}
+
+.bigthumb-view {
+  padding: 0px;
+  margin: 0px;
+}
+
+.feedmodule-border-gray {
+  padding: 0px;
+  border: none;
+}
+
+.fm2-title-border-box-blue {
+  border: none;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  height: 23px;
+  padding: 6px 0px 0px;
+  background: none;
+}
+
+.feedmodule-border-blue {
+  padding: 0px;
+  border: none;
+}
+
+.fm2-icon {
+  display: none;
+}#masthead-nav-main a[href="/videos"],
+#masthead-nav-main a[href="/channels"] {
+    display: inline-block;
+    width: 1023px;
+    height: 5654px;
+    background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png"), url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top -50px;
+    color: transparent;
+    margin-left: -74px;
+
+}
+/* Abbassa i video per dare spazio al logo e alle tab */
+#homepage-main-content, .video-grid, #whats-featured {
+    margin-top: 150px !important;
+}
+
+/* Se vuoi distanziarli specificamente dal titolo della sezione */
+.hp-module-title {
+    margin-bottom: 15px !important;
+    margin-top: 20px !important;
+}
+@-moz-document url-prefix("http://127.0.0.1/watch?v=") {
+
+#masthead-nav-main a[href="/videos"],
+#masthead-nav-main a[href="/channels"] {
+    display: inline-block;
+    width: 1009px;
+    height: 86px;
+    background-image: url("https://www.webdesignmuseum.org/uploaded/fullscreen-others/youtube-2007-02.png"), url("https://www.webdesignmuseum.org/uploaded/fullscreen-others/youtube-2007-02.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top -51px;
+    color: transparent;
+    margin-left: -45px;
+}
+
+#masthead-nav-main a[href="/videos"] {
+    margin-left: -67px;
+}
+
+#masthead-nav-main a[href="/channels"] {
+    background-image: url("");
+}
+
+#watch-video-details-inner-less .watch-video-desc {
+    border-top: 1px solid #ccc;
+    padding: 5px 0px 0px 0px;
+}
+/* == REPLICA IDENTICA ORANGE SUBSCRIBE YOUTUBE 2007 == */
+
+#subscribeDiv {
+    visibility: hidden !important;
+    position: relative !important;
+    display: inline-block !important;
+    width: 82px !important;  
+    height: 22px !important;
+    vertical-align: middle !important;
+    margin-left: 4px !important;
+    margin-top: 34px;
+}
+
+#subscribeDiv:before {
+    visibility: visible !important;
+    display: block !important;
+    content: 'Subscribe' !important;
+    
+    /* FONT E TESTO */
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+    text-align: center !important;
+    line-height: 20px !important;
+    
+    /* DIMENSIONI */
+    width: 71px !important;
+    height: 21px !important;
+    
+    /* POSIZIONAMENTO */
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    cursor: pointer !important;
+    
+    /* BORDO */
+    border: 1px solid #a35200 !important; 
+    border-radius: 3px !important; 
+    
+    /* GRADIENTE CON OMBRA INTERNA INCORPORATA */
+    background:  #d67000 !important;
+    background: -webkit-linear-gradient(top, #b85c00 0%, #e67300 1%, #e67300 50%, #bd5e00 100%) !important;
+    background: linear-gradient(to bottom, #b85c00 0%, #e67300 1%, #e67300 50%, #bd5e00 100%) !important;
+}
+
+/* HOVER */
+#subscribeDiv:hover:before {
+    border-color: #8a4500 !important;
+    background: linear-gradient(to bottom, #cf6800 0%, #ff8000 15%, #ff8000 50%, #d66b00 100%) !important;
+}
+
+/* ACTIVE */
+#subscribeDiv:active:before {
+    border-color: #592b00 !important;
+    background: linear-gradient(to bottom, #8f4700 0%, #b35900 30%, #944a00 100%) !important;
+}
+
+#subscribeDiv:after {
+    display: none !important;
+    content: '' !important;
+}
+/* EFFETTO HOVER (Testo forzato bianco) */
+#subscribeDiv:hover:before {
+    color: #000000 !important; 
+    border-color: #8a4500 !important;
+    background: linear-gradient(to bottom, #cf6800 0%, #ff8000 15%, #ff8000 50%, #d66b00 100%) !important;
+}
+
+/* EFFETTO CLICK (Testo forzato bianco) */
+#subscribeDiv:active:before {
+    color: #000000 !important;
+    border-color: #592b00 !important;
+    background: linear-gradient(to bottom, #8f4700 0%, #b35900 30%, #944a00 100%) !important;
+}
+/* --- RECREATION 2007 METADATA --- */
+
+/* 1. Forza le icone originali che hai linkato */
+#watch-action-share-link:before {
+    background: url("https://web.archive.org/web/20071104022953im_/http://www.youtube.com/img/icn_watch3_share_22x18.png") !important;
+    width: 22px !important;
+    height: 18px !important;
+    content: "" !important;
+    display: inline-block !important;
+    background-size: contain !important;
+}
+
+#watch-action-favorite-link:before {
+    background: url("https://web.archive.org/web/20071104022953im_/http://www.youtube.com/img/icn_watch3_fav_22x18.png") !important;
+    width: 22px !important;
+    height: 18px !important;
+    content: "" !important;
+    display: inline-block !important;
+}
+
+#watch-action-playlists-link:before {
+    background: url("https://web.archive.org/web/20071104022953im_/http://www.youtube.com/img/icn_watch3_playlist_22x18.png") !important;
+    width: 22px !important;
+    height: 18px !important;
+    content: "" !important;
+    display: inline-block !important;
+}
+
+#watch-action-flag-link:before {
+    background: url("https://web.archive.org/web/20071104022954im_/http://www.youtube.com/img/icn_watch3_report_22x18.png") !important;
+    width: 22px !important;
+    height: 18px !important;
+    content: "" !important;
+    display: inline-block !important;
+}
+
+/* 2. Allineamento testi (Share, Favorite, ecc) */
+.watch-tab-contents span {
+    vertical-align: middle !important;
+    padding-left: 5px !important;
+}
+
+/* 3. La barra dei contatori (Comments, Favorited, etc) */
+/* Nel tuo CSS DX2006 questa zona è gestita da #watch-share-services-collapsed */
+#watch-share-services-collapsed {
+    border-top: 1px dotted #999 !important;
+    border-bottom: 1px dotted #999 !important;
+    background-color: #ffffff !important;
+    padding: 8px 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+}
+
+/* Forza il carattere Arial come nello screenshot */
+#watch-main-area, .watch-tab-body {
+    font-family: Arial, sans-serif !important;
+    background: #FFF !important; /* Molto importante: lo screenshot è su bianco */
+}
+
+/* 4. Sistema le Views (Views: 86,103) */
+#watch-view-count {
+    font-size: 2px !important;
+    font-weight: bold !important;
+    color: #393939 !important;
+    margin-top: -30px;
+    margin-left: 278px;
+}
+/* Container Rating e Views */
+.rating-views-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 5px;
+}
+
+#watch-view-count {
+    font-size: 17px !important;
+    font-weight: normal !important;
+}
+/* Container icone */
+.watch-tabs {
+    border-bottom: none !important;
+    margin-bottom: 10px !important;
+}
+
+/* Allineamento icone watch3 */
+#watch-action-share-link:before, 
+#watch-action-favorite-link:before, 
+#watch-action-playlists-link:before, 
+#watch-action-flag-link:before {
+    margin-right: 3px !important;
+    vertical-align: middle !important;
+    display: inline-block !important;
+}
+
+#watch-action-share-link, #watch-action-favorite-link, 
+#watch-action-playlists-link, #watch-action-flag-link {
+    font-size: 16px !important; /* Il testo "Share", "Favorite" è più grande del resto */
+    font-weight: bold !important;
+    margin-right: 15px !important;
+}
+#watch-main-area {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    color: #333 !important;
+}
+
+#watch-main-area a {
+    color: #0033CC !important;
+    text-decoration: underline !important;
+}
+   #watch-rating-div #ratingWrapper {
+        width: unset;
+        position: absolute;
+        top: 456px;
+        left: 112px;
+        z-index: 950;
+        transform:scale(1.2);
+   }
+    
+    #watch-rating-div #ratingWrapper:before {
+        visibility: visible;
+        content: "Rate:";
+        position: absolute;
+        width: 12px;
+        left: -34px;
+        top: 0px;
+        text-align: center !important;
+        font-size: 13px;
+            color: #5b5b5b;
+    }
+    
+    #defaultRatingMessage {
+        position: absolute;
+        left: 72px;
+        width: 77px;
+        top: -6px;
+        text-align: center;
+        
+    }
+    #defaultRatingMessage .smallText {
+        font-size: 11px;
+        color: black;
+    }
+
+
+@-moz-document url-prefix("http://127.0.0/results?") {
+
+    /* Forza l'applicazione a livello di radice della pagina di ricerca */
+    :root #masthead-nav-main a[href*="videos"],
+    :root #masthead-nav-main a[href*="channels"] {
+        display: inline-block !important;
+        visibility: visible !important;
+        width: 1009px !important;
+        height: 86px !important;
+        background-image: url("https://www.webdesignmuseum.org/uploaded/fullscreen-others/youtube-2007-02.png"), url("https://www.webdesignmuseum.org/uploaded/fullscreen-others/youtube-2007-02.png") !important;
+        background-repeat: no-repeat, no-repeat !important;
+        background-position: center top -49px;
+        color: transparent !important;
+        margin-left: -45px !important;
+        overflow: hidden !important;
+    }
+
+}
+
+
+
+
+
+/* == REPLICA IDENTICA ORANGE SUBSCRIBE YOUTUBE 2007 == */
+
+#subscribeDiv {
+    visibility: hidden !important;
+    position: relative !important;
+    display: inline-block !important;
+    width: 82px !important;  
+    height: 22px !important;
+    vertical-align: middle !important;
+    margin-left: 4px !important;
+    margin-top: 34px;
+}
+
+#subscribeDiv:before {
+    visibility: visible !important;
+    display: block !important;
+    content: 'Subscribe' !important;
+    
+    /* FONT E TESTO */
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+    text-align: center !important;
+    line-height: 20px !important;
+    
+    /* DIMENSIONI */
+    width: 71px !important;
+    height: 21px !important;
+    
+    /* POSIZIONAMENTO */
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    cursor: pointer !important;
+    
+    /* BORDO */
+    border: 1px solid #a35200 !important; 
+    border-radius: 3px !important; 
+    
+    /* GRADIENTE CON OMBRA INTERNA INCORPORATA */
+    background:  #d67000 !important;
+    background: -webkit-linear-gradient(top, #b85c00 0%, #e67300 1%, #e67300 50%, #bd5e00 100%) !important;
+    background: linear-gradient(to bottom, #b85c00 0%, #e67300 1%, #e67300 50%, #bd5e00 100%) !important;
+}
+
+/* HOVER */
+#subscribeDiv:hover:before {
+    border-color: #8a4500 !important;
+    background: linear-gradient(to bottom, #cf6800 0%, #ff8000 15%, #ff8000 50%, #d66b00 100%) !important;
+}
+
+/* ACTIVE */
+#subscribeDiv:active:before {
+    border-color: #592b00 !important;
+    background: linear-gradient(to bottom, #8f4700 0%, #b35900 30%, #944a00 100%) !important;
+}
+
+#subscribeDiv:after {
+    display: none !important;
+    content: '' !important;
+}
+/* EFFETTO HOVER (Testo forzato bianco) */
+#subscribeDiv:hover:before {
+    color: #000000 !important; 
+    border-color: #8a4500 !important;
+    background: linear-gradient(to bottom, #cf6800 0%, #ff8000 15%, #ff8000 50%, #d66b00 100%) !important;
+}
+
+/* EFFETTO CLICK (Testo forzato bianco) */
+#subscribeDiv:active:before {
+    color: #000000 !important;
+    border-color: #592b00 !important;
+    background: linear-gradient(to bottom, #8f4700 0%, #b35900 30%, #944a00 100%) !important;
+}
+
+
+
+
+
+
+
+
+/* Sostituisci #logo con il selettore che usi per il tuo logo KamTape */
+#logo:hover::after {
+	content: "Home";
+	/* Il testo che vuoi far apparire */
+	position: relative;
+	top: 19px;
+	/* Regola la posizione rispetto al logo */
+	left: 86px;
+	background-color: #fff;
+	/* Giallo pallido tipico dei vecchi tooltip */
+	color: #666;
+	padding: 2px 5px;
+	border: 1px solid #fff;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	z-index: 100;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FORZATURA TOTALE VISIBILITÀ */
+#footer-container, #footer, .footer-ads, #yt2009-footer,
+#baseDiv > table:last-child, #baseDiv > div:last-child {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+        position: relative !important; 
+    clear: both !important;
+    margin-bottom: 210px !important;
+    z-index: 99 !important;
+}
+/* FORZATURA TOTALE VISIBILITÀ */
+#footer-container, #footer, .footer-ads, #yt2009-footer,
+#baseDiv > table:last-child, #baseDiv > div:last-child {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    
+    /* Sposta in alto senza bloccarlo */
+    position: absolute !important;
+    top: 1710px !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 99 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+#watch-vid-title h1 {
+color: #33;
+font-size: 20px;
+position: absolute;
+margin-top: -37px;
+margin-left: -2px;
+}
+#watch-ratings-views, 
+.watch-view-count-rating {
+    float: right !important;
+    text-align: right !important;
+    margin-top: -434px !important; /* Regola questo valore per allinearlo visivamente al centro del titolo */
+    position: relative !important;
+    top: 23px !important;
+    left: -147px !important;
+}
+
+/* 4. Resetta il flusso per gli elementi sottostanti (la descrizione/i bottoni) */
+#watch-main-area, 
+#watch-player-div-container {
+    clear: both !important;
+}
+
+
+
+/* --- WATCH PAGE: Sistema il titolo e il player --- */
+#watch-vid-title, 
+.watch-video-title,
+#watch-headline-title {
+    margin-top: 75px !important;
+    margin-bottom: -6px !important;
+    display: block !important;
+}
+
+#watch-video-container, 
+#watch-player-div {
+    margin-top: 1px !important;
+}
+
+/* --- RIMOZIONE DEFINITIVA "WANT TO CUSTOMIZE" --- */
+/* Visto che i selettori precedenti hanno fallito, proviamo con questi che mirano alla struttura della tabella */
+#baseDiv > table tr > td:last-child > table:first-child,
+div[style*="border: 1px solid #CCCCCC"],
+.homepage-side-block {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Allarga la colonna destra dei video correlati e del canale */
+#watch-other-vids {
+    position: absolute;
+    left: 491px;
+    width: 390px !important; /* Aumentato da 300px a 410px */
+}
+
+
+/* Allunga i box grigi di sfondo (Related e Channel) */
+.watch-discoverbox {
+;
+    margin-top: 6px;
+    height: 405px !important;
+    width: px !important; /* Forza la larghezza del box grigio */
+}
+
+/* Adatta i testi di anteprima per non farli tagliare */
+.watch-discoverbox-body:before,
+.watch-discoverbox-body:after {
+    width: 398px !important; /* Adatta la barra "Showing 1-20..." */
+}
+
+/* Allunga le scritte "See All Videos" per coprire la nuova larghezza */
+#watch-related-videos-panel .yt-uix-expander-head:before {
+    margin-left: 3155px !important; /* Spostato più a destra */
+}
+#watch-related-videos-panel .yt-uix-expander-head:after {
+    margin-left: 210px !important; /* Spostato più a destra */
+}
+
+/* Sistema i vecchi sfondi h2 fissi a 302px (li allunghiamo via CSS) */
+#watch-related-videos-panel > h2:nth-child(1),
+#watch-channel-videos-panel > h2:nth-child(1) {
+    width: 410px !important;
+    background-size: 100% 100% !important; /* Forza l'immagine ad allungarsi */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 5. PROTEZIONE TITOLI 2007: Blocca le barre ed evita l'effetto stretchato */
+#watch-related-videos-panel > h2:nth-child(1),
+#watch-channel-videos-panel > h2:nth-child(1) {
+    width: 162px !important; /* Forza la larghezza originale dell'immagine del 2007 */
+    background-size: contain !important; /* Impedisce qualsiasi distorsione o allungamento */
+    background-repeat: no-repeat !important;
+}
+
+/* Sposta i link "See All Videos" per riallinearli correttamente */
+#watch-related-videos-panel .yt-uix-expander-head:before {
+    margin-left: 315px !important;
+}
+#watch-related-videos-panel .yt-uix-expander-head:after {
+    margin-left: 210px !important;
+}
+
+
+
+/* FORZATURA TOTALE VISIBILITÀ */
+#footer-container, #footer, .footer-ads, #yt2009-footer,
+#baseDiv > table:last-child, #baseDiv > div:last-child {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+        position: relative !important; 
+    clear: both !important;
+    margin-bottom: 210px !important;
+    z-index: 99 !important;
+}
+/* FORZATURA TOTALE VISIBILITÀ */
+#footer-container, #footer, .footer-ads, #yt2009-footer,
+#baseDiv > table:last-child, #baseDiv > div:last-child {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    
+    /* Sposta in alto senza bloccarlo */
+    position: absolute !important;
+    top: 1710px !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 99 !important;
+}
+
+
+
+
+@-moz-document url-prefix("http://127.0.0.1/results?") {
+
+
+    /* Configurazione per il pulsante VIDEOS */
+    #masthead-nav-main a[href="/videos"] {
+        display: inline-block;
+        width: 1009px;
+        height: 63px;
+        background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+        background-repeat: no-repeat;
+        background-position: center -50px;
+        background-size: auto;
+        color: transparent;
+        margin-right: -73px;
+    }
+
+    /* Configurazione per il pulsante CHANNELS */
+    #masthead-nav-main a[href="/channels"] {
+        display: inline-block;
+        width: 1009px;
+        height: 6px;
+        background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: auto;
+        color: transparent;
+        margin-right: -73px;
+    }
+
+}
+
+
+
+/* 2. Il Nome Utente: Grande, Sottolineato e in linea */
+.fn {
+    font-size: 16px !important; 
+    font-weight: bold !important;
+    text-decoration: underline !important; /* Questo sottolinea il nome */
+    display: inline-block !important;
+    position: relative !important;
+    left: 0px !important;
+    top: 0px !important;
+    margin-bottom: 4px !important;
+}
+
+/* Esclude il "From" dalla sottolineatura */
+.fn:before {
+    display: inline-block !important;
+    text-decoration: none !important; /* Rimuove la linea SOLO dal From */
+}
+
+/* ==========================================================
+   AGGIUNTA: LINEE DIVISORIE PER VIDEO CORRELATI (STILE 2007)
+   ========================================================== */
+
+/* Applica la linea sotto ogni blocco video nei correlati */
+#watch-related-videos-panel .video-entry,
+#watch-related-vids-body .video-entry {
+    display: block !important;
+    float: none !important;      /* Rimuove conflitti di allineamento */
+    clear: both !important;      /* Isola il blocco sulla sua riga */
+    width: 2800px !important;     /* Adatta la linea alla larghezza del box grigio */
+    
+    /* Ecco la linea divisoria originale del 2007 */
+    border-bottom: 1px solid #CCCCCC !important; 
+
+    /* Spaziatura per non far appiccicare le miniature alla linea */
+    padding-top: 1px !important;
+    padding-bottom: 8px !important;
+    margin: 0 auto !important;   /* Centra il blocco nel riquadro */
+}
+
+
+
+
+
+
+
+
+
+

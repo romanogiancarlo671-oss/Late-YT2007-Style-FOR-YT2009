@@ -1,0 +1,74 @@
+/* ==========================================================
+   FIX 2007: LINEE DIVISORIE RELATED VIDEOS & RIMOZIONE URL/EMBED
+   ========================================================== */
+
+
+/* 2. Nasconde completamente i box URL ed Embed sotto le info del video */
+#watch-url-div, 
+#watch-embed-div,
+label[for="watch-url-field"], 
+#watch-url-field,
+label[for="embed_code"], 
+#embed_code,
+#watch-embed-customize {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* ==========================================================
+   AGGIUNTA: SCRITTA "ABOUT THIS VIDEO" (STILE 2007)
+   ========================================================== */
+
+
+
+/* Inserisce l'intestazione "About This Video" prima del testo della descrizione */
+#watch-video-details::before {
+    content: "About This Video" !important;
+    display: block !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #000000  !important;
+    margin-bottom: 6px !important;
+    text-transform: none !important;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   HEADER REBUILD: BARRA LINK SUPERIORE STILE 2007
+   ========================================================== */
+
+/* 1. Nasconde i vecchi link standard (Sign Up / Sign In) */
+#masthead-utility,
+.utility-links,
+#quicklinks,
+#util-links {
+    display: none !important;
+}
+
+/* 2. Inietta la stringa completa simulando la posizione del 2007 */
+#masthead::after,
+#header::after,
+#masthead-nav::after {
+    content: "Sign Up  |  My Account  |  History  |  Help  |  Log In  |  Site" !important;
+    position: absolute !important;
+    top: 15px !important;       /* Regola l'altezza dal bordo superiore */
+    right: 234px !important;    /* Spinge i link tutto a destra */
+    display: block !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 13px !important;
+    color: #0033CC !important;  /* Blu classico dei link di un tempo */
+    text-decoration: underline !important; /* Aggiunge la sottolineatura */
+    font-weight: normal !important;
+    letter-spacing: 0.5px !important;
+    word-spacing: 1px !important;
+    z-index: 9999 !important;   /* Lo tiene sopra qualsiasi elemento */
+}

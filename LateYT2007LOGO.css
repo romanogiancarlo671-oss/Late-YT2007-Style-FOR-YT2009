@@ -1,0 +1,35 @@
+#masthead #logo {
+    width: 155px !important;
+    height: 66px !important;
+    background: url("https://web.archive.org/web/20071024170212im_/http://static.youtube.com/yt/img/pic_youtubelogo_123x63-vfl14287.gif") no-repeat;
+
+    
+    /* Gestione della posizione */
+    position: relative; /* Permette l'uso di top, bottom, left, right */
+    top: 22px;           /* Sposta verso il basso (valori positivi) o l'alto (negativi) */
+    bottom: auto;       /* Alternativa a top */
+    left: 70px;          /* Sposta verso destra (valori positivi) o sinistra (negativi) */
+    right: auto;        /* Alternativa a left */
+    
+    /* Gestione dei livelli (Primo Posto) */
+    z-index: 9999;      /* Valore alto per superare gli altri elementi */
+}
+
+/* Sostituisci #logo con il selettore che usi per il tuo logo KamTape */
+#logo:hover::after {
+	content: "Home";
+	/* Il testo che vuoi far apparire */
+	position: relative;
+	top: -7px;
+	/* Regola la posizione rispetto al logo */
+	left: 76px;
+	background-color: #fff;
+	/* Giallo pallido tipico dei vecchi tooltip */
+	color: #666;
+	padding: 2px 5px;
+	border: 1px solid #fff;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	z-index: 100;
+
+}

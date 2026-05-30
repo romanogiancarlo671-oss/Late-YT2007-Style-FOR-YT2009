@@ -1,0 +1,30 @@
+@-moz-document url-prefix("http://127.0.0.1/results?") {
+
+
+    /* Configurazione per il pulsante VIDEOS */
+    #masthead-nav-main a[href="/videos"] {
+        display: inline-block;
+        width: 1009px;
+        height: 63px;
+        background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+        background-repeat: no-repeat;
+        background-position: center -50px;
+        background-size: auto;
+        color: transparent;
+        margin-right: -73px;
+    }
+
+    /* Configurazione per il pulsante CHANNELS */
+    #masthead-nav-main a[href="/channels"] {
+        display: inline-block;
+        width: 1009px;
+        height: 6px;
+        background-image: url("https://www.webdesignmuseum.org/uploaded/timeline/youtube/youtube-2007.png");
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: auto;
+        color: transparent;
+        margin-right: -73px;
+    }
+
+}
